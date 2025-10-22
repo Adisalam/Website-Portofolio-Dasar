@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adi Salam Ramdani</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">Logo</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/blog.html">Blog</a></li>
+                <li><a href="work.html" class="active">Works</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main class="work-section">
+        <h1>Work</h1>
+
+        <section class="portfolio-list">
+
+            <div class="project-item">
+                <div class="project-image-wrapper">
+                    <img src="/asset/flappy_bird-1.png"
+                        alt="Designing Dashboards" class="project-image">
+                </div>
+                <div class="project-details">
+                    <h2 class="project-title"><a href="work-detail.html">Membuat game flappy bird</a></h2>
+                    <div class="project-meta">
+                        <span class="year">2021</span>
+                        <span class="tags">Menu</span>
+                    </div>
+                    <p class="project-description">
+                        Pengalaman praktis dalam pengembangan game 2D dengan membuat ulang game Flappy Bird. Berhasil
+                        mengimplementasikan mekanik inti game, termasuk fisika sederhana (gravitasi dan lompatan),
+                        manajemen collision detection, dan sistem scoring.
+                    </p>
+                </div>
+            </div>
+
+            <div class="project-item desktop-only">
+                <div class="project-image-wrapper">
+                    <img src="https://via.placeholder.com/600x400/ff6347/ffffff?text=Vibrant+Portraits"
+                        alt="Vibrant Portraits of 2020" class="project-image">
+                </div>
+                <div class="project-details">
+                    <h2 class="project-title">Vibrant Portraits of 2020</h2>
+                    <div class="project-meta">
+                        <span class="year">2018</span>
+                        <span class="tags">Illustration</span>
+                    </div>
+                    <p class="project-description">
+                        Amat minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                        consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                    </p>
+                </div>
+            </div>
+
+            <div class="project-item mobile-only">
+                <div class="project-image-wrapper">
+                    <img src="https://via.placeholder.com/600x400/ff6347/ffffff?text=Landing+Pages"
+                        alt="Designing Landing pages" class="project-image">
+                </div>
+                <div class="project-details">
+                    <h2 class="project-title">Designing Landing pages</h2>
+                    <div class="project-meta">
+                        <span class="year">2020</span>
+                        <span class="tags">Website</span>
+                    </div>
+                    <p class="project-description">
+                        Amat minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                        consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                    </p>
+                </div>
+            </div>
+
+            <div class="project-item desktop-only">
+                <div class="project-image-wrapper">
+                    <img src="https://via.placeholder.com/600x400/2f4f4f/ffffff?text=Malayalam+Type"
+                        alt="36 Days of Malayalam type" class="project-image">
+                </div>
+                <div class="project-details">
+                    <h2 class="project-title">36 Days of Malayalam type</h2>
+                    <div class="project-meta">
+                        <span class="year">2018</span>
+                        <span class="tags">Typography</span>
+                    </div>
+                    <p class="project-description">
+                        Amat minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                        consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                    </p>
+                </div>
+            </div>
+
+            <div class="project-item desktop-only">
+                <div class="project-image-wrapper">
+                    <img src="https://via.placeholder.com/600x400/ffa07a/ffffff?text=Components+Design" alt="Components"
+                        class="project-image">
+                </div>
+                <div class="project-details">
+                    <h2 class="project-title">Components</h2>
+                    <div class="project-meta">
+                        <span class="year">2018</span>
+                        <span class="tags">Components, Design</span>
+                    </div>
+                    <p class="project-description">
+                        Amat minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                        consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <p class="copyright">Copyright ©2025 All rights reserved</p>
+    </footer>
+
+    <script>
+        // Sederhana JS untuk fungsionalitas menu mobile (hamburger icon)
+        document.querySelector('.menu-toggle').addEventListener('click', function () {
+            document.querySelector('.nav-links').classList.toggle('open');
+            this.querySelector('i').classList.toggle('fa-bars');
+            this.querySelector('i').classList.toggle('fa-times'); // Ganti ikon menjadi 'X'
+        });
+    </script>
+
+</body>
+
+</html>

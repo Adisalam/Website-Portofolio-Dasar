@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Posts</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght=400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <nav class="navbar">
+            <ul class="nav-links" id="navLinks">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/blog.html" class="active">Blog</a></li>
+                <li><a href="work.html">Works</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main class="blog-section">
+        <div class="blog-container">
+            <h1 class="page-title">Blog</h1>
+
+            <article class="blog-post">
+                <h2 class="post-title-main">UI Interactions of the week</h2>
+                <div class="post-meta-main">
+                    <span class="post-date">12 Feb 2019</span>
+                    <span class="post-separator">|</span>
+                    <span class="post-tag">Express, Handlebars</span>
+                </div>
+                <p class="post-summary-main">
+                    Amat minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                    duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                </p>
+            </article>
+
+            <article class="blog-post">
+                <h2 class="post-title-main">UI Interactions of the week</h2>
+                <div class="post-meta-main">
+                    <span class="post-date">12 Feb 2019</span>
+                    <span class="post-separator">|</span>
+                    <span class="post-tag">Express, Handlebars</span>
+                </div>
+                <p class="post-summary-main">
+                    Amat minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                    duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                </p>
+            </article>
+
+            <article class="blog-post">
+                <h2 class="post-title-main">UI Interactions of the week</h2>
+                <div class="post-meta-main">
+                    <span class="post-date">12 Feb 2019</span>
+                    <span class="post-separator">|</span>
+                    <span class="post-tag">Express, Handlebars</span>
+                </div>
+                <p class="post-summary-main">
+                    Amat minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                    duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                </p>
+            </article>
+
+            <article class="blog-post">
+                <h2 class="post-title-main">UI Interactions of the week</h2>
+                <div class="post-meta-main">
+                    <span class="post-date">12 Feb 2019</span>
+                    <span class="post-separator">|</span>
+                    <span class="post-tag">Express, Handlebars</span>
+                </div>
+                <p class="post-summary-main">
+                    Amat minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                    duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                </p>
+            </article>
+
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <p class="copyright">Copyright ©2020 All rights reserved</p>
+    </footer>
+
+    <script>
+        // Sederhana JS untuk fungsionalitas menu mobile (hamburger icon)
+        document.querySelector('.menu-toggle').addEventListener('click', function () {
+            document.querySelector('.nav-links').classList.toggle('open');
+            this.querySelector('i').classList.toggle('fa-bars');
+            this.querySelector('i').classList.toggle('fa-times'); // Ganti ikon menjadi 'X'
+        });
+    </script>
+
+</body>
+
+</html>
