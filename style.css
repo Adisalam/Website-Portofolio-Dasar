@@ -1,15 +1,15 @@
-/* RESET dan Variabel Dasar */
+
 :root {
     --primary-color: #212529;
-    /* Hampir Hitam untuk Teks */
+   
     --secondary-color: #ff6464;
-    /* Merah untuk Aksen */
+   
     --text-light: #8695A4;
-    /* Abu-abu untuk Teks Sekunder/Tahun */
+   
     --bg-light: #FFFFFF;
-    /* Putih untuk Background */
+   
     --bg-gray: #EDF7FA;
-    /* Biru muda/Abu-abu muda untuk background list */
+   
     --font-sans: 'Roboto', sans-serif;
 }
 
@@ -29,7 +29,7 @@ body {
     min-height: 100vh;
 }
 
-/* Utilitas */
+
 .desktop-only {
     display: none;
 }
@@ -38,7 +38,7 @@ body {
     display: none;
 }
 
-/* Header dan Navigasi */
+
 .main-header {
     width: 100%;
     padding: 20px 0;
@@ -50,19 +50,19 @@ body {
     padding: 0 15px;
     display: flex;
     justify-content: flex-end;
-    /* Mobile: hanya menu di kanan */
+   
     align-items: center;
 }
 
 .logo {
     display: none;
-    /* Logo tidak terlihat di mobile */
+   
 }
 
 .nav-links {
     list-style: none;
     display: none;
-    /* Sembunyikan di mobile secara default */
+   
     flex-direction: column;
     position: absolute;
     top: 60px;
@@ -75,7 +75,7 @@ body {
 
 .nav-links.open {
     display: flex;
-    /* Tampilkan saat menu dibuka */
+   
 }
 
 .nav-links li a {
@@ -101,7 +101,7 @@ body {
     color: var(--primary-color);
 }
 
-/* **Tampilan Mobile (Default)** */
+
 .work-section {
     max-width: 900px;
     width: 90%;
@@ -120,7 +120,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    /* Jarak antar project */
+   
 }
 
 .project-item {
@@ -128,7 +128,7 @@ body {
     padding-bottom: 25px;
     display: flex;
     flex-direction: column;
-    /* Tumpuk: gambar di atas, detail di bawah */
+   
     gap: 15px;
 }
 
@@ -178,7 +178,7 @@ body {
     color: var(--primary-color);
 }
 
-/* Tampilkan item mobile-only dan sembunyikan desktop-only */
+
 .mobile-only {
     display: flex;
     flex-direction: column;
@@ -188,7 +188,7 @@ body {
     display: none;
 }
 
-/* Footer */
+
 .main-footer {
     text-align: center;
     padding: 50px 0 30px;
@@ -215,22 +215,22 @@ body {
     color: var(--primary-color);
 }
 
-/* =================================================== */
-/* MEDIA QUERY untuk Tampilan Laptop/Desktop (>= 768px) */
-/* =================================================== */
+
+
+
 @media (min-width: 768px) {
 
-    /* Header dan Navigasi Desktop */
+   
     .navbar {
         justify-content: flex-end;
-        /* Posisikan menu di kanan */
+       
         padding: 0 30px;
     }
 
     .nav-links {
         position: static;
         display: flex !important;
-        /* Selalu tampil di desktop */
+       
         flex-direction: row;
         background: none;
         border: none;
@@ -239,16 +239,16 @@ body {
 
     .nav-links li a {
         font-size: 1.25em;
-        /* Ukuran font lebih besar */
+       
         padding: 0 20px;
     }
 
     .menu-toggle {
         display: none;
-        /* Sembunyikan tombol hamburger */
+       
     }
 
-    /* **Tampilan Desktop/Laptop** */
+   
     .work-section {
         margin-top: 100px;
         margin-bottom: 100px;
@@ -256,19 +256,19 @@ body {
 
     .work-section h1 {
         display: none;
-        /* Sembunyikan judul "Work" di sini, atau pindahkan ke kiri jika diinginkan */
+       
     }
 
     .portfolio-list {
         gap: 50px;
     }
 
-    /* Tata Letak Dua Kolom menggunakan CSS Grid untuk setiap item */
+   
     .project-item {
         border-bottom: 1px solid #E0E0E0;
         padding-bottom: 30px;
         display: grid;
-        /* Kolom: 1. Gambar (260px) 2. Konten (otomatis) */
+       
         grid-template-columns: 260px 1fr;
         gap: 20px;
         align-items: flex-start;
@@ -280,19 +280,19 @@ body {
 
     .project-image-wrapper {
         width: 100%;
-        /* Menempatkan di kolom pertama */
+       
         grid-column: 1 / 2;
     }
 
     .project-details {
-        /* Menempatkan di kolom kedua */
+       
         grid-column: 2 / 3;
     }
 
-    /* Tampilkan item desktop-only dan sembunyikan mobile-only */
+   
     .desktop-only {
         display: grid;
-        /* Menggunakan ulang tata letak grid project-item */
+       
         grid-template-columns: 260px 1fr;
         gap: 20px;
         align-items: flex-start;
@@ -302,10 +302,10 @@ body {
         display: none;
     }
 
-    /* Penyesuaian Project Details Desktop */
+   
     .project-title {
         font-size: 2em;
-        /* Ukuran judul lebih besar */
+       
         margin-top: 0;
     }
 
@@ -317,26 +317,26 @@ body {
 
 
 
-/* =================================================== */
-/* CSS Khusus untuk Halaman Work Detail */
-/* =================================================== */
+/* ===================================================
+CSS Khusus untuk Halaman Work Detail
+=================================================== */
 
 .detail-section {
     width: 100%;
-    /* Gunakan padding horizontal di mobile, dan batasan lebar di desktop */
+   
     padding: 0 15px;
     flex-grow: 1;
 }
 
 .detail-container {
     max-width: 680px;
-    /* Batasan lebar konten sesuai gambar desktop */
+   
     margin: 0 auto;
     padding-top: 20px;
     padding-bottom: 50px;
 }
 
-/* Judul Utama */
+
 .detail-title {
     font-size: 2.2em;
     font-weight: 700;
@@ -344,7 +344,7 @@ body {
     margin-bottom: 20px;
 }
 
-/* Meta Data (Tahun & Tags) */
+
 .detail-meta {
     display: flex;
     align-items: center;
@@ -353,7 +353,7 @@ body {
 
 .detail-meta .year {
     background-color: var(--secondary-color);
-    /* Merah untuk tahun di halaman detail */
+   
     color: var(--bg-light);
     padding: 2px 10px;
     border-radius: 16px;
@@ -367,7 +367,7 @@ body {
     font-size: 1em;
 }
 
-/* Paragraf Teks */
+
 .detail-text {
     font-size: 1.1em;
     line-height: 1.5;
@@ -375,7 +375,7 @@ body {
     color: var(--primary-color);
 }
 
-/* Blok Konten Gambar */
+
 .content-block {
     margin: 30px 0;
 }
@@ -385,10 +385,10 @@ body {
     height: auto;
     display: block;
     border-radius: 8px;
-    /* Tambahkan sedikit radius pada gambar */
+   
 }
 
-/* Heading-heading Konten */
+
 .content-heading-1 {
     font-size: 2em;
     font-weight: 700;
@@ -402,33 +402,33 @@ body {
     margin-bottom: 15px;
 }
 
-/* =================================================== */
-/* MEDIA QUERY untuk Tampilan Laptop/Desktop (>= 768px) */
-/* =================================================== */
+
+
+
 @media (min-width: 768px) {
 
-    /* Penyesuaian Header Navigasi Desktop (diambil dari style.css sebelumnya) */
+   
     .navbar {
         padding-top: 50px;
-        /* Jarak atas lebih besar di desktop */
+       
         padding-bottom: 50px;
     }
 
-    /* Container detail (desktop) */
+   
     .detail-container {
         padding-top: 50px;
         padding-bottom: 80px;
     }
 
-    /* Judul Utama Desktop */
+   
     .detail-title {
         font-size: 2.7em;
         font-weight: 900;
-        /* Lebih tebal */
+       
         margin-bottom: 30px;
     }
 
-    /* Heading-heading Konten Desktop */
+   
     .content-heading-1 {
         font-size: 2.5em;
         margin-top: 50px;
@@ -442,15 +442,15 @@ body {
 
     .detail-text {
         font-size: 1em;
-        /* Mengatur ulang ukuran teks di desktop */
+       
     }
 
 }
 
 
-/* =================================================== */
-/* CSS Khusus untuk Halaman HOME */
-/* =================================================== */
+/* ===================================================
+CSS Khusus untuk Halaman HOME
+=================================================== */
 
 .home-main {
     flex-grow: 1;
@@ -458,18 +458,18 @@ body {
 
 .main-container {
     max-width: 860px;
-    /* Batasan lebar utama konten */
+   
     margin: 0 auto;
     padding: 0 15px;
-    /* Padding untuk mobile */
+   
 }
 
-/* Utilitas Tambahan */
+
 .desktop-only-flex {
     display: none;
 }
 
-/* 1. Hero Section (Mobile Default: Tumpuk Vertikal) */
+
 .hero-section {
     display: flex;
     flex-direction: column;
@@ -480,7 +480,6 @@ body {
 
 .hero-image-wrapper {
     order: -1;
-    /* Posisikan gambar di atas teks di mobile */
     margin-bottom: 25px;
 }
 
@@ -488,7 +487,6 @@ body {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    /* Bulat */
     object-fit: cover;
 }
 
@@ -507,7 +505,7 @@ body {
 .btn-resume {
     display: inline-block;
     background-color: var(--secondary-color);
-    /* Merah */
+   
     color: var(--bg-light);
     text-decoration: none;
     padding: 10px 20px;
@@ -520,13 +518,13 @@ body {
     background-color: #e55c5c;
 }
 
-/* 2. Recent Posts Section */
+
 .recent-posts {
     background-color: var(--bg-gray);
-    /* Background abu-abu muda */
+   
     padding: 30px 15px 40px;
     margin: 0 -15px;
-    /* Mengisi lebar penuh */
+   
 }
 
 .posts-header {
@@ -544,18 +542,18 @@ body {
 
 .view-all {
     color: #00A8CC;
-    /* Biru muda */
+   
     text-decoration: none;
     font-size: 1em;
     font-weight: 400;
     display: none;
-    /* Sembunyikan di mobile */
+   
 }
 
 .posts-list {
     display: flex;
     flex-direction: column;
-    /* Tumpuk di mobile */
+   
     gap: 15px;
 }
 
@@ -584,7 +582,7 @@ body {
     margin: 0 10px;
 }
 
-/* 3. Featured Works Section (Mirip dengan Work List, disesuaikan) */
+
 .featured-works {
     padding: 30px 0 50px;
 }
@@ -658,15 +656,14 @@ body {
 }
 
 
-/* =================================================== */
-/* MEDIA QUERY untuk Tampilan Laptop/Desktop (>= 768px) */
-/* =================================================== */
+
+
+
 @media (min-width: 768px) {
 
-    /* 1. Hero Section (Desktop) */
+   
     .hero-section {
         flex-direction: row;
-        /* Baris: teks di kiri, gambar di kanan */
         text-align: left;
         align-items: flex-start;
         padding: 100px 0;
@@ -675,7 +672,6 @@ body {
 
     .hero-text {
         order: -1;
-        /* Posisikan teks di kiri */
         flex-grow: 1;
         padding-top: 15px;
     }
@@ -683,14 +679,13 @@ body {
     .hero-image-wrapper {
         order: 1;
         margin-bottom: 0;
-        width: 243px;
-        height: 243px;
+        width: 700px;
+        height: 250px;
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-        /* Tambah bayangan modern */
         border-radius: 50%;
         overflow: hidden;
     }
-
+    
     .hero-image {
         width: 100%;
         height: 100%;
@@ -700,16 +695,16 @@ body {
         font-size: 2.7em;
         font-weight: 700;
     }
-
+    
     .hero-description {
         font-size: 1em;
     }
 
-    /* 2. Recent Posts Section (Desktop: Dua Kolom) */
+   
     .recent-posts {
         padding: 30px 0 50px;
         margin: 0;
-        /* Hapus margin negatif */
+       
     }
 
     .recent-posts h2 {
@@ -719,23 +714,23 @@ body {
 
     .view-all {
         display: block;
-        /* Tampilkan "View all" di desktop */
+       
     }
 
     .posts-list {
         flex-direction: row;
-        /* Dua kolom */
+       
         gap: 20px;
     }
 
     .post-item {
         flex: 1;
-        /* Lebar yang sama untuk kedua kolom */
+       
         padding: 25px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
-    /* 3. Featured Works Section (Desktop: Grid Dua Kolom untuk Item) */
+   
     .featured-works {
         padding: 50px 0 80px;
     }
@@ -748,7 +743,7 @@ body {
     .work-item {
         display: grid;
         grid-template-columns: 246px 1fr;
-        /* Gambar (246px) dan Detail (sisa ruang) */
+       
         gap: 20px;
         align-items: flex-start;
         padding-bottom: 30px;
@@ -772,18 +767,18 @@ body {
 
 
 
-/* =================================================== */
-/* CSS Khusus untuk Halaman BLOG */
-/* =================================================== */
+/* ===================================================
+CSS Khusus untuk Halaman BLOG
+=================================================== */
 
 .blog-section {
     width: 100%;
     flex-grow: 1;
-    padding: 0 15px; /* Padding untuk mobile */
+    padding: 0 15px;
 }
 
 .blog-container {
-    max-width: 860px; /* Batasan lebar utama konten (sama dengan Home) */
+    max-width: 860px;
     margin: 0 auto;
     padding-top: 20px;
     padding-bottom: 50px;
@@ -796,7 +791,7 @@ body {
     color: var(--primary-color);
 }
 
-/* Style untuk setiap post */
+
 .blog-post {
     padding: 20px 0;
     border-bottom: 1px solid #E0E0E0;
@@ -808,7 +803,7 @@ body {
 
 .post-title-main {
     font-size: 1.5em;
-    font-weight: 500; /* Lebih ringan dari heading utama */
+    font-weight: 500;
     line-height: 1.3;
     margin-bottom: 10px;
     color: var(--primary-color);
@@ -831,7 +826,7 @@ body {
 }
 
 .post-meta-main .post-tag {
-    color: var(--text-light); /* Abu-abu untuk tag */
+    color: var(--text-light);
 }
 
 .post-summary-main {
@@ -840,9 +835,9 @@ body {
     color: var(--primary-color);
 }
 
-/* =================================================== */
-/* MEDIA QUERY untuk Tampilan Laptop/Desktop (>= 768px) */
-/* =================================================== */
+
+
+
 @media (min-width: 768px) {
 
     .blog-container {
@@ -865,9 +860,9 @@ body {
 }
 
 
-/* =================================================== */
-/* CSS Khusus Halaman CONTACT (Light Mode) */
-/* =================================================== */
+/* ===================================================
+CSS Khusus Halaman CONTACT (Light Mode)
+=================================================== */
 
 .contact-section {
     width: 100%;
@@ -898,8 +893,8 @@ body {
 
 .btn-email-cta {
     display: inline-block;
-    background-color: var(--accent-color); /* Merah */
-    color: var(--primary-bg); /* Teks Putih */
+    background-color: var(--accent-color);
+    color: var(--primary-bg);
     text-decoration: none;
     padding: 12px 25px;
     border-radius: 4px;
@@ -926,18 +921,18 @@ body {
     margin: 0 auto;
 }
 
-/* =================================================== */
-/* MEDIA QUERY untuk Tampilan Laptop/Desktop (>= 768px) */
-/* =================================================== */
+
+
+
 @media (min-width: 768px) {
     
     .page-title-contact {
         font-size: 3em;
     }
     
-    /* Pastikan header dan footer light mode Anda juga responsif */
+   
     
-    /* Contoh Header Light Mode */
+   
     .main-header.light-mode-header .navbar {
         padding: 20px 30px;
         justify-content: flex-end;
