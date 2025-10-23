@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hubungi Saya - Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="light-mode-base">
+    
+    <header class="main-header light-mode-header">
+        <nav class="navbar">
+            <a href="index.html" class="logo-light-mode">
+                INBIO
+            </a> 
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="work.html">Works</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html" class="nav-active">Contact</a></li>
+                <a href="mailto:hello@inbio.com" class="contact-email light-mode-email desktop-only-flex">hello@inbio.com</a>
+            </ul>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main class="contact-section">
+        <div class="contact-container">
+            <h1 class="page-title-contact">Hubungi Saya</h1>
+
+            <div class="contact-content">
+                <p class="contact-description">
+                    Tertarik untuk berkolaborasi atau ingin bertanya? Jangan ragu untuk klik tombol di bawah ini dan sampaikan ide brillian Anda!
+                </p>
+                
+                <a href="mailto:your.email@example.com" class="btn-email-cta">
+                    Kirim Email Sekarang!
+                </a>
+            </div>
+
+            <div class="contact-illustration">
+                <img src="https://via.placeholder.com/150x150/FFFFFF/FF6347?text=Fox+Illustration" alt="Ilustrasi Rubah Lucu" class="fox-image">
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="main-footer light-mode-footer">
+        <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <p class="copyright">Copyright ©2020 All rights reserved</p>
+    </footer>
+
+    <script>
+        // Sederhana JS untuk fungsionalitas menu mobile (hamburger icon)
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('open');
+            this.querySelector('i').classList.toggle('fa-bars');
+            this.querySelector('i').classList.toggle('fa-times'); // Ganti ikon menjadi 'X'
+        });
+    </script>
+
+</body>
+</html>
